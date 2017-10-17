@@ -1,7 +1,0 @@
-id Class Name Functionality Provider Cost Security ET 
-1 A Search1 Search X 1 0.6 113
-2 B Find loockup Y 1.5 0.5 210
-3 C execute done Z 1 0.7 144
-4 A order ordering Y 1.8 0.4 215 
-5 B  purchase purchase Z 1.9 0.6 310
-  

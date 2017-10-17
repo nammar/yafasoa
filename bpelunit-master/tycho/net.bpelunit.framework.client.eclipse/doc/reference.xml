@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <?NLS TYPE="org.eclipse.help.toc"?>
+  <toc label="Reference" topic="doc/extending.html"> 
+  
+  	<topic label="Extending BPELUnit" href="doc/extending.html" />	
+  
+    <topic label="API Reference" href="doc/reference/api/overview-summary.html"> 
+	
+      <topic label="net.bpelunit.framework" href="doc/reference/api/net/bpelunit/framework/package-summary.html"/>
+      <topic label="net.bpelunit.framework.control.ext" href="doc/reference/api/net/bpelunit/framework/control/ext/package-summary.html"/>
+      <topic label="net.bpelunit.framework.control.result" href="doc/reference/api/net/bpelunit/framework/control/result/package-summary.html"/>
+	  
+    </topic>
+    <topic label="Extension Points Reference" href="doc/reference/extension-points/index.html"> 
+	
+      <topic label="net.bpelunit.framework.client.eclipse.bpelDeployer" href="doc/reference/extension-points/net_bpelunit_framework_client_eclipse_bpelDeployer.html" />
+      <topic label="net.bpelunit.framework.client.eclipse.headerProcessor" href="doc/reference/extension-points/net_bpelunit_framework_client_eclipse_headerProcessor.html" />
+      <topic label="net.bpelunit.framework.client.eclipse.soapEncoder" href="doc/reference/extension-points/net_bpelunit_framework_client_eclipse_soapEncoder.html" />
+	  
+    </topic>
+  </toc>

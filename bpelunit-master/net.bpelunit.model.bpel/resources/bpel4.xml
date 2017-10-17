@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpel:process name="Process4" targetNamespace="ProcessNamespace" xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable">
+  <bpel:import importType="http://schemas.xmlsoap.org/wsdl/" location="testSimpleProcessSequence.wsdl" namespace="http://www.example.org/service"/>
+  <bpel:partnerLinks>
+    <bpel:partnerLink name="client" partnerLinkType="ser:clientPLT" partnerRole="client" myRole="compositeProvider" xmlns:ser="http://www.example.org/service"/>
+    <bpel:partnerLink name="WS14" partnerLinkType="ser:WS14PLT" myRole="compositeProvider" xmlns:ser="http://www.example.org/service"/>
+    <bpel:partnerLink name="WS19" partnerLinkType="ser:WS19PLT" myRole="compositeProvider" xmlns:ser="http://www.example.org/service"/>
+    <bpel:partnerLink name="WS11" partnerLinkType="ser:WS11PLT" myRole="compositeProvider" xmlns:ser="http://www.example.org/service"/>
+  </bpel:partnerLinks>
+  <bpel:variables>
+    <bpel:variable name="request" messageType="ser:Request" xmlns:ser="http://www.example.org/service"/>
+    <bpel:variable name="response" messageType="ser:Response" xmlns:ser="http://www.example.org/service"/>
+    <bpel:variable name="d10" messageType="ser:d10" xmlns:ser="http://www.example.org/service"/>
+    <bpel:variable name="d8" messageType="ser:d8" xmlns:ser="http://www.example.org/service"/>
+    <bpel:variable name="d5" messageType="ser:d5" xmlns:ser="http://www.example.org/service"/>
+    <bpel:variable name="d4" messageType="ser:d4" xmlns:ser="http://www.example.org/service"/>
+  </bpel:variables>
+  <bpel:sequence name="mainSequence">
+    <bpel:receive name="receive" createInstance="yes" variable="request" operation="searchRepsitory" partnerLink="client" portType="ser:lns:SearchWSPT" xmlns:ser="http://www.example.org/service"/>
+    <bpel:flow>
+      <bpel:links/>
+      <bpel:sequence name="Sequence">
+        <bpel:invoke name="invoke" operation="21"/>
+        <bpel:invoke name="invoke" operation="04"/>
+        <bpel:invoke name="invoke" operation="23"/>
+        <bpel:invoke name="invoke" operation="24"/>
+        <bpel:invoke name="invoke" operation="33"/>
+        <bpel:invoke name="invoke" operation="01"/>
+        <bpel:invoke name="invoke" operation="02"/>
+        <bpel:invoke name="invoke" operation="03"/>
+        <bpel:invoke name="invoke" operation="12"/>
+      </bpel:sequence>
+      <bpel:sequence name="sequence1">
+        <bpel:flow>
+          <bpel:links/>
+          <bpel:sequence name="Sequence2">
+            <bpel:invoke name="invoke" operation="35"/>
+            <bpel:invoke name="invoke" operation="04"/>
+            <bpel:invoke name="invoke" operation="22"/>
+            <bpel:invoke name="invoke" operation="23"/>
+            <bpel:invoke name="invoke" operation="15"/>
+            <bpel:invoke name="invoke" operation="33"/>
+            <bpel:invoke name="invoke" operation="24"/>
+            <bpel:invoke name="invoke" operation="34"/>
+            <bpel:invoke name="invoke" operation="13"/>
+            <bpel:invoke name="invoke" operation="14"/>
+            <bpel:invoke name="invoke" operation="01"/>
+            <bpel:invoke name="invoke" operation="02"/>
+            <bpel:invoke name="invoke" operation="12"/>
+            <bpel:invoke name="invoke" operation="03"/>
+            <bpel:invoke name="invoke" operation="21"/>
+            <bpel:invoke name="invoke" operation="32"/>
+            <bpel:invoke name="invoke" operation="31"/>
+          </bpel:sequence>
+          <bpel:sequence name="Sequence3">
+            <bpel:invoke name="invoke" operation="35"/>
+            <bpel:invoke name="invoke" operation="04"/>
+            <bpel:invoke name="invoke" operation="22"/>
+            <bpel:invoke name="invoke" operation="05"/>
+            <bpel:invoke name="invoke" operation="23"/>
+            <bpel:invoke name="invoke" operation="15"/>
+            <bpel:invoke name="invoke" operation="33"/>
+            <bpel:invoke name="invoke" operation="24"/>
+            <bpel:invoke name="invoke" operation="34"/>
+            <bpel:invoke name="invoke" operation="13"/>
+            <bpel:invoke name="invoke" operation="14"/>
+            <bpel:invoke name="invoke" operation="01"/>
+            <bpel:invoke name="invoke" operation="02"/>
+            <bpel:invoke name="invoke" operation="12"/>
+            <bpel:invoke name="invoke" operation="03"/>
+            <bpel:invoke name="invoke" operation="21"/>
+            <bpel:invoke name="invoke" operation="32"/>
+            <bpel:invoke name="invoke" operation="31"/>
+          </bpel:sequence>
+        </bpel:flow>
+        <bpel:invoke name="invoke" operation="35"/>
+        <bpel:invoke name="invoke" operation="04"/>
+        <bpel:invoke name="invoke" operation="22"/>
+        <bpel:invoke name="invoke" operation="05"/>
+        <bpel:invoke name="invoke" operation="23"/>
+        <bpel:invoke name="invoke" operation="15"/>
+        <bpel:invoke name="invoke" operation="33"/>
+        <bpel:invoke name="invoke" operation="24"/>
+        <bpel:invoke name="invoke" operation="25"/>
+        <bpel:invoke name="invoke" operation="34"/>
+        <bpel:invoke name="invoke" operation="13"/>
+        <bpel:invoke name="invoke" operation="14"/>
+        <bpel:invoke name="invoke" operation="01"/>
+        <bpel:invoke name="invoke" operation="02"/>
+        <bpel:invoke name="invoke" operation="12"/>
+        <bpel:invoke name="invoke" operation="03"/>
+        <bpel:invoke name="invoke" operation="21"/>
+        <bpel:invoke name="invoke" operation="32"/>
+        <bpel:invoke name="invoke" operation="31"/>
+      </bpel:sequence>
+    </bpel:flow>
+    <bpel:reply name="reply" variable="response" operation="operation" partnerLink="processPL" portType="ser:Porttype" xmlns:ser="http://www.example.org/service"/>
+  </bpel:sequence>
+</bpel:process>

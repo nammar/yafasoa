@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extensionRegistry
+	xmlns="http://www.bpelunit.org/schema/testExtension" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<deployer extensionClass="net.bpelunit.framework.control.deploy.activebpel.ActiveBPELDeployer" type="activebpel"/>
+	<deployer extensionClass="net.bpelunit.framework.control.deploy.activevos9.ActiveVOS9Deployer" type="activevos9"/>
+	<deployer extensionClass="net.bpelunit.framework.control.deploy.simple.TestModeDeployer" type="testmode"/>
+	<deployer extensionClass="net.bpelunit.framework.control.deploy.simple.FixedDeployer" type="fixed"/>
+        <deployer extensionClass="net.bpelunit.framework.control.deploy.ode.ODEDeployer" type="ode"/>
+
+	<encoder type="document/literal" extensionClass="net.bpelunit.framework.control.soap.DocumentLiteralEncoder" />
+	<encoder type="rpc/literal" extensionClass="net.bpelunit.framework.control.soap.RPCLiteralEncoder" />
+	
+	<headerProcessor type="wsa" extensionClass="net.bpelunit.framework.control.soap.WSAHeaderProcessor" />
+
+	<dataSource type="velocity" extensionClass="net.bpelunit.framework.control.datasource.VelocityDataSource" />
+	<dataSource type="csv" extensionClass="net.bpelunit.framework.control.datasource.csv.CSVDataSource"/>
+	<dataSource type="excel" extensionClass="net.bpelunit.framework.control.datasource.excel.ExcelDataSource"/>
+	<datasource type="html" extensionClass="net.bpelunit.framework.control.datasource.html.HtmlDataSource"/>
+	<datasource type="ods" extensionClass="net.bpelunit.framework.control.datasource.ods.OdsDataSource"/>
+</extensionRegistry>

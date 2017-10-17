@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schematest.bpelunit.org"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Q1="http://schematest.bpelunit.org">
+	<xsd:element name="itinerary">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:double">
+					<xsd:attribute name="color">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="red" />
+								<xsd:enumeration value="green" />
+								<xsd:enumeration value="blue" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="results">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element name="result" type="xsd:string" minOccurs="1"
+						maxOccurs="unbounded"/>
+					<xsd:element name="count" type="xsd:nonNegativeInteger"
+						minOccurs="1" maxOccurs="1" />
+				</xsd:sequence>
+				<xsd:element name="empty" minOccurs="1" maxOccurs="1" />
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

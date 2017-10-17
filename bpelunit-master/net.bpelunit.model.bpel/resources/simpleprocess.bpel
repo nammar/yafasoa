@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpel:process name="Process_single" targetNamespace="ProcessNamespace" xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable">
+  <bpel:import importType="http://schemas.xmlsoap.org/wsdl/" location="testSimpleProcessSequence.wsdl" namespace="http://www.example.org/service"/>
+  <bpel:partnerLinks>
+    <bpel:partnerLink name="client" partnerLinkType="ser:clientPLT" partnerRole="client" myRole="compositeProvider" xmlns:ser="http://www.example.org/service"/>
+  </bpel:partnerLinks>
+  <bpel:variables>
+    <bpel:variable name="request" messageType="ser:Request" xmlns:ser="http://www.example.org/service"/>
+    <bpel:variable name="response" messageType="ser:Response" xmlns:ser="http://www.example.org/service"/>
+    <bpel:variable name="gene" messageType="mc:Gene" xmlns:mc="mc">
+      <bpel:documentation>
+        <priv:pl pl="H" xmlns:priv="privacylevelslattic"/>
+        <priv:pl pl="MH" xmlns:priv="privacylevelslattic"/>
+      </bpel:documentation>
+    </bpel:variable>
+  </bpel:variables>
+  <bpel:sequence name="mainSequence">
+    <bpel:receive name="receive" createInstance="yes" variable="request" operation="searchRepsitory" partnerLink="client" portType="ser:lns:SearchWSPT" xmlns:ser="http://www.example.org/service"/>
+    <bpel:assign name="assign">
+      <bpel:copy>
+        <bpel:from variable="request" part="parameters">
+          <bpel:query>in</bpel:query>
+        </bpel:from>
+        <bpel:to variable="response" part="parameters">
+          <bpel:query>in</bpel:query>
+        </bpel:to>
+      </bpel:copy>
+    </bpel:assign>
+    <bpel:flow>
+      <bpel:links/>
+      <bpel:sequence>
+        <bpel:invoke name="invoke" operation="OpA2"/>
+      </bpel:sequence>
+      <bpel:sequence name="sequence1">
+        <bpel:flow>
+          <bpel:links/>
+          <bpel:sequence name="Sequence2">
+            <bpel:invoke name="invoke" operation="OpB"/>
+          </bpel:sequence>
+          <bpel:sequence name="Sequence3">
+            <bpel:invoke name="invoke" operation="OpC"/>
+          </bpel:sequence>
+        </bpel:flow>
+      </bpel:sequence>
+    </bpel:flow>
+    <bpel:invoke name="invoke" operation="OpA1"/>
+    <bpel:invoke name="invoke" operation="OpA3"/>
+    <bpel:reply name="reply" variable="response" operation="operation" partnerLink="processPL" portType="ser:Porttype" xmlns:ser="http://www.example.org/service"/>
+  </bpel:sequence>
+</bpel:process>

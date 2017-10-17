@@ -1,0 +1,144 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1364578734095
+Build-Jdk: 1.7.0_17
+Built-By: antonio
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ target/dependency/activation-1.1.1.jar,
+ target/dependency/cloning-1.9.0.jar,
+ target/dependency/commons-beanutils-1.7.0.jar,
+ target/dependency/commons-codec-1.3.jar,
+ target/dependency/commons-collections-3.2.1.jar,
+ target/dependency/commons-digester-1.8.jar,
+ target/dependency/commons-httpclient-3.1.jar,
+ target/dependency/commons-io-1.3.2.jar,
+ target/dependency/commons-lang-2.4.jar,
+ target/dependency/commons-logging-1.1.1.jar,
+ target/dependency/dom4j-1.1.jar,
+ target/dependency/javax.servlet-3.0.0.v201112011016.jar,
+ target/dependency/jdom-1.1.3.jar,
+ target/dependency/jetty-continuation-8.1.9.v20130131.jar,
+ target/dependency/jetty-http-8.1.9.v20130131.jar,
+ target/dependency/jetty-io-8.1.9.v20130131.jar,
+ target/dependency/jetty-server-8.1.9.v20130131.jar,
+ target/dependency/jetty-util-8.1.9.v20130131.jar,
+ target/dependency/junit-4.8.1.jar,
+ target/dependency/log4j-1.2.15.jar,
+ target/dependency/objenesis-1.2.jar,
+ target/dependency/oro-2.0.8.jar,
+ target/dependency/truezip-6.8.2.jar,
+ target/dependency/velocity-1.7.jar,
+ target/dependency/velocity-tools-2.0.jar,
+ target/dependency/wsdl4j-1.6.2.jar,
+ target/dependency/xmlbeans-2.4.0.jar
+Bundle-Description: BPEL has become the defacto standard language for co
+ mposing Web services. However, as every other programming language deve
+ lopers can introduce defects into the code that can lead to undesired c
+ onsequences when the software is rolled out at the client-side. Therefo
+ re, all software development methodologies include testing as one of th
+ e important activities. For nearly every programming language, a unit t
+ esting framework exists, for example JUnit for Java. These testing fram
+ eworks allow developers to easily test small chunks of the code that th
+ ey have written. Until recently, BPEL lacked such support. However, BPE
+ LUnit was developed for closing this gap.
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Bundle-ManifestVersion: 2
+Bundle-Name: BPELUnit :: Coverage Measurement
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: net.bpelunit.framework.coverage
+Bundle-Vendor: Leibniz Universität Hannover
+Bundle-Version: 1.6.2.201303291838
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;scope=compile;artifactId=!stax-api
+Embed-Directory: target/dependency
+Embed-Transitive: true
+Embedded-Artifacts: target/dependency/commons-io-1.3.2.jar;g="org.apache
+ .commons";a="commons-io";v="1.3.2",target/dependency/framework-1.6.2-SN
+ APSHOT.jar;g="net.bpelunit";a="framework";v="1.6.2-SNAPSHOT",target/dep
+ endency/commons-codec-1.3.jar;g="commons-codec";a="commons-codec";v="1.
+ 3",target/dependency/commons-lang-2.4.jar;g="commons-lang";a="commons-l
+ ang";v="2.4",target/dependency/commons-logging-1.1.1.jar;g="commons-log
+ ging";a="commons-logging";v="1.1.1",target/dependency/truezip-6.8.2.jar
+ ;g="de.schlichtherle";a="truezip";v="6.8.2",target/dependency/xmlbeans-
+ 2.4.0.jar;g="org.apache.xmlbeans";a="xmlbeans";v="2.4.0",target/depende
+ ncy/wsdl4j-1.6.2.jar;g="wsdl4j";a="wsdl4j";v="1.6.2",target/dependency/
+ log4j-1.2.15.jar;g="log4j";a="log4j";v="1.2.15",target/dependency/veloc
+ ity-1.7.jar;g="org.apache.velocity";a="velocity";v="1.7",target/depende
+ ncy/velocity-tools-2.0.jar;g="org.apache.velocity";a="velocity-tools";v
+ ="2.0",target/dependency/commons-beanutils-1.7.0.jar;g="commons-beanuti
+ ls";a="commons-beanutils";v="1.7.0",target/dependency/commons-digester-
+ 1.8.jar;g="commons-digester";a="commons-digester";v="1.8",target/depend
+ ency/dom4j-1.1.jar;g="dom4j";a="dom4j";v="1.1",target/dependency/oro-2.
+ 0.8.jar;g="oro";a="oro";v="2.0.8",target/dependency/commons-collections
+ -3.2.1.jar;g="commons-collections";a="commons-collections";v="3.2.1",ta
+ rget/dependency/cloning-1.9.0.jar;g="uk.com.robust-it";a="cloning";v="1
+ .9.0",target/dependency/objenesis-1.2.jar;g="org.objenesis";a="objenesi
+ s";v="1.2",target/dependency/activation-1.1.1.jar;g="javax.activation";
+ a="activation";v="1.1.1",target/dependency/model-bpel-1.6.2-SNAPSHOT.ja
+ r;g="net.bpelunit";a="model-bpel";v="1.6.2-SNAPSHOT",target/dependency/
+ util-1.6.2-SNAPSHOT.jar;g="net.bpelunit";a="util";v="1.6.2-SNAPSHOT",ta
+ rget/dependency/jdom-1.1.3.jar;g="org.jdom";a="jdom";v="1.1.3",target/d
+ ependency/jetty-5.1.10.jar;g="jetty";a="jetty";v="5.1.10",target/depend
+ ency/servlet-api-2.4.jar;g="javax.servlet";a="servlet-api";v="2.4",targ
+ et/dependency/model-bpel-1.6.2-SNAPSHOT-bundle.jar;g="net.bpelunit";a="
+ model-bpel";v="1.6.2-SNAPSHOT";c="bundle"
+Export-Package: net.bpelunit.framework.coverage;uses:="net.bpelunit.fram
+ ework.coverage.instrumentation.activity,net.bpelunit.framework.coverage
+ .instrumentation,net.bpelunit.framework.coverage.output,net.bpelunit.fr
+ amework.coverage.instrumentation.branch,net.bpelunit.framework.coverage
+ .output.csv,net.bpelunit.framework.coverage.service";version="1.6.2.201
+ 303291838",net.bpelunit.framework.coverage.marker;version="1.6.2.201303
+ 291838",net.bpelunit.framework.coverage.output.html;uses:="net.bpelunit
+ .framework.coverage.result,net.bpelunit.framework.coverage.output";vers
+ ion="1.6.2.201303291838",net.bpelunit.framework.coverage.output.csv;use
+ s:="net.bpelunit.framework.coverage.result,net.bpelunit.framework.cover
+ age.output";version="1.6.2.201303291838",net.bpelunit.framework.coverag
+ e.instrumentation.activity;uses:="net.bpelunit.framework.coverage.resul
+ t,net.bpelunit.framework.coverage.instrumentation,net.bpelunit.framewor
+ k.coverage.marker";version="1.6.2.201303291838",net.bpelunit.framework.
+ coverage.output.xml;uses:="net.bpelunit.framework.coverage.result,net.b
+ pelunit.framework.coverage.output";version="1.6.2.201303291838",net.bpe
+ lunit.framework.coverage.result;version="1.6.2.201303291838",net.bpelun
+ it.framework.coverage.service;uses:="net.bpelunit.framework.coverage.in
+ strumentation";version="1.6.2.201303291838",net.bpelunit.framework.cove
+ rage.output;uses:="net.bpelunit.framework.coverage.result";version="1.6
+ .2.201303291838",net.bpelunit.framework.coverage.instrumentation;uses:=
+ "net.bpelunit.framework.coverage.result,net.bpelunit.framework.coverage
+ .marker,net.bpelunit.framework.coverage,net.bpelunit.framework.coverage
+ .service";version="1.6.2.201303291838",net.bpelunit.framework.coverage.
+ instrumentation.branch;uses:="net.bpelunit.framework.coverage.result,ne
+ t.bpelunit.framework.coverage.instrumentation,net.bpelunit.framework.co
+ verage.marker";version="1.6.2.201303291838"
+Ignore-Package: com.sun.jdmk.comm,javax.swing.tree,oracle.xml.parser.v2,
+ org.apache.struts.taglib,com.werken.xpath,java.net,javax.mail.internet,
+ org.apache.tools.ant.taskdefs,org.xml.sax,javax.xml.stream,jrockit.vm,j
+ avax.swing.filechooser,com.sun.tools.javadoc,java.util.zip,org.apache.s
+ truts.util,java.awt.event,org.bouncycastle.crypto.generators,java.util.
+ concurrent,javax.swing.plaf.basic,javax.swing.border,org.bouncycastle.c
+ rypto.params,org.apache.xerces.parsers,java.util.concurrent.locks,javax
+ .servlet.jsp,java.lang.reflect,org.apache.commons.httpclient.methods,or
+ g.apache.commons.httpclient.params,javax.swing.table,javax.xml.transfor
+ m.stream,java.security.spec,java.awt.datatransfer,java.sql,java.beans,c
+ om.sun.net.ssl,org.apache.tools.tar,javax.jms,java.lang.annotation,org.
+ apache.struts.tiles,org.apache.xml.resolver.tools,org.relaxng.datatype,
+ javax.xml.transform.dom,org.bouncycastle.crypto.digests,java.nio.charse
+ t,org.apache.crimson.jaxp,javax.security.cert,java.math,com.sun.msv.dat
+ atype.xsd,org.gjt.xpp,org.apache.tools.ant.types,java.lang.ref,org.boun
+ cycastle.crypto.macs,javax.swing.event,org.apache.struts.action,java.aw
+ t,org.apache.tools.bzip2,org.bouncycastle.crypto.engines,sun.reflect,ja
+ vax.xml.stream.util,java.security.cert,org.apache.struts.validator,java
+ .util.jar,org.apache.log.format,javax.management,org.apache.commons.htt
+ pclient,javax.xml.namespace,org.bouncycastle.crypto.io,com.sun.net.ssl.
+ internal.ssl,javax.swing,org.xml.sax.ext,java.io,oracle.xml.parser,java
+ x.servlet.jsp.tagext,javax.net.ssl,java.lang,javax.xml.transform.sax,ja
+ vax.naming,javax.xml.parsers,javax.xml.xpath,javax.mail,org.apache.comm
+ ons.validator,java.util.logging,org.xml.sax.helpers,javax.swing.text,CO
+ M.jrockit.reflect,org.jaxen.jdom,java.util,java.nio.channels,org.apache
+ .log.output.io,com.sun.javadoc,java.awt.image,COM.newmonics.PercClassLo
+ ader,org.apache.xml.resolver,java.util.regex,java.nio.charset.spi,com.s
+ un.msv.datatype,java.text,java.nio,org.apache.struts.config,org.apache.
+ avalon.framework.logger,org.apache.tools.ant,java.security,org.apache.l
+ og,javax.sql,org.bouncycastle.crypto,javax.xml.transform,org.apache.xer
+ ces.dom,javax.xml.soap
+Require-Package: net.bpelunit.framework
+Tool: Bnd-1.50.0
