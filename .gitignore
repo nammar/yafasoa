@@ -1,1 +1,7 @@
-.class
+.DS_Store
+.metadata
+RemoteSystemsTempFiles
+soajmetal/.classpath
+soajmetal/.project
+soajmetal/.settings
+soajmetal/bin
