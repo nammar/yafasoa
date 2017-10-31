@@ -33,7 +33,7 @@ public class ReadSecurityService {
 	public static void ReadSService() {
 		SServicePool=new ArrayList<SecurityService>();
 		
-			String f ="C:\\Users\\wafaa.radwan\\Desktop\\run exp input\\SecurityService.txt";
+			String f ="inputs/SecurityService.txt";
 
 		File file = new File(f);
 		SecurityService SStemp = new SecurityService();	 

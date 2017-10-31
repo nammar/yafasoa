@@ -43,7 +43,7 @@ public class inputdataSOA {
 	 */
 	public static void ReadServiceClass() {
 		ClassPool =new ArrayList<ServiceClass>();
-		String f = "C:\\Users\\wafaa.radwan\\Desktop\\run exp input\\serviceClass2.txt";
+		String f = "inputs/serviceClass2.txt";
 
 		File file = new File(f);
 		ServiceClass Ctemp = new ServiceClass();
@@ -91,7 +91,7 @@ public class inputdataSOA {
 	public static void ReadServices() {
 		ServicePool = new ArrayList<Service>();
 		//String f = "C:\\Users\\wafaa.radwan\\Desktop\\run exp input\\BP1.txt";
-		String f = "C:\\Users\\wafaa.radwan\\Desktop\\run exp input\\BP2.txt";// aadded 3-3-2016
+		String f = "inputs/BP2.txt";// aadded 3-3-2016
 		//System.out.println(f);
 		File file = new File(f);
 		Service Stemp = new Service();

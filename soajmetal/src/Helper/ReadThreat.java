@@ -24,7 +24,7 @@ public class ReadThreat {
 	}
 
 	public static void ReadThreat(){
-		String f ="C:\\Users\\wafaa.radwan\\Desktop\\run exp input\\Threat.txt";
+		String f ="inputs/Threat.txt";
 
 		File file = new File(f);
 		Threat Ttemp = new Threat();	 
@@ -70,7 +70,7 @@ public class ReadThreat {
 						
 						
 			}
-		}
+		} 
 		catch(Exception e){
 			System.out.println("error");
 
