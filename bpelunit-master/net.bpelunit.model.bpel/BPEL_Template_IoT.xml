@@ -1,0 +1,27 @@
+<bpel:process name="reserveParkingCompositeService">
+  <bpel:partnerLinks>
+    <bpel:partnerLink name="driver1" partnerLinkType="Client" partnerRole="client" myRole="compositeProvider"/>
+    <bpel:partnerLink name="PS1" partnerLinkType="ParkingStructure" myRole="compositeProvider"/>
+    <bpel:partnerLink name="PS2" partnerLinkType="ParkingStructure" myRole="compositeProvider"/>
+    <bpel:partnerLink name="TL1" partnerLinkType="TrafficLight" myRole="compositeProvider" />
+    <bpel:partnerLink name="TL2" partnerLinkType="TrafficLight" myRole="compositeProvider" />
+    <bpel:partnerLink name="searchService" partnerLinkType="GABasedService" myRole="compositeProvider"/>
+  </bpel:partnerLinks>
+<bpel:variables>
+    <bpel:variable name="request" messageType="ser:Request" />
+    <bpel:variable name="response" messageType="ser:Response" />
+    <bpel:variable name="location" messageType="Location" />
+    <bpel:variable name="inflow" messageType="integer" />
+    <bpel:variable name="outflow" messageType="integer" />
+    <bpel:variable name="jam indicator" messageType="boolean" />
+  </bpel:variables>
+  <bpel:sequence name="mainSequence">
+    <bpel:receive name="receive" createInstance="yes" variable="request" operation="reserveParking" partnerLink="client" portType="SearchServiceType" />
+    <bpel:flow>
+      <bpel:sequence name="Sequence1">
+        <bpel:invoke name="invoke" operation="getRankMap"/>
+     </bpel:sequence>
+    </bpel:flow>
+    <bpel:reply name="reply" variable="response" />
+  </bpel:sequence>
+</bpel:process>
