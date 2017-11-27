@@ -1,1 +1,6 @@
-{deviceID: "8d3kiuhs8a", "trafficlight": "TL1", "street": "ST1", "gpslocation": 11,11,”inflow": 20 ,”outflow": 10}
+{"deviceID": "8d3kiuhs8a",
+  "trafficlight": "TL1",
+  "street": "ST1",
+  "gpslocation": [11,11],
+  "inflow": 20 ,
+  "outflow": 10}
