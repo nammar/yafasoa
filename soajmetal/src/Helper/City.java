@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class City {
 
-	/**
+	/*
 	 * Streets in a city
 	 */
 	private static Map<String, Street> vertices = new HashMap<>();

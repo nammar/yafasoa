@@ -21,19 +21,19 @@ public class Street {
 	
 	int lanes;
 	
-	/**
+	/*
 	 * In kilometers
 	 */
 	int length;
 	
-	/**
+	/*
 	 * Cars per minute
 	 */
 	float flowRate;
 	
 	int currentNumberOfCars;
 	
-	/**
+	/*
 	 * Connections with this street
 	 */
 	Map<String, Double> edges = new HashMap<>();
