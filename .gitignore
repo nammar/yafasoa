@@ -14,3 +14,4 @@ soajmetal/src/junit-4.8.1.jar
 .settings
 .idea
 src.iml
+.recommenders
