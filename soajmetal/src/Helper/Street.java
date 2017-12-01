@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * 
  * @author Ala' Hashesh
@@ -15,11 +17,11 @@ public class Street {
 
 	String id;
 	
-	Location startPoint;
-	
-	Location endPoint;
-	
 	int lanes;
+	
+	Location start;
+	
+	Location end;
 	
 	/*
 	 * In kilometers
@@ -29,14 +31,34 @@ public class Street {
 	/*
 	 * Cars per minute
 	 */
+	@SerializedName("flow_rate")
 	float flowRate;
 	
+	@SerializedName("current_number_of_cars")
 	int currentNumberOfCars;
+	
+	@SerializedName("maximum_allowed_cars")
+	int maximumAllowedCars;
 	
 	/*
 	 * Connections with this street
 	 */
 	Map<String, Double> edges = new HashMap<>();
+	
+	/**
+	 * Add connection from this street to another street
+	 * @param street	The other street
+	 * @param cost		Cost (i.e. time)
+	 */
+	public void addEdge(String street, Double cost) {
+		if (!edges.containsKey(street)) {
+			edges.put(street, cost);
+		}
+	}
+	
+	public Iterator<Map.Entry<String, Double>> getEdges() {
+		return edges.entrySet().iterator();
+	}
 
 	public String getId() {
 		return id;
@@ -46,28 +68,28 @@ public class Street {
 		this.id = id;
 	}
 
-	public Location getStartPoint() {
-		return startPoint;
-	}
-
-	public void setStartPoint(Location startPoint) {
-		this.startPoint = startPoint;
-	}
-
-	public Location getEndPoint() {
-		return endPoint;
-	}
-
-	public void setEndPoint(Location endPoint) {
-		this.endPoint = endPoint;
-	}
-
 	public int getLanes() {
 		return lanes;
 	}
 
 	public void setLanes(int lanes) {
 		this.lanes = lanes;
+	}
+
+	public Location getStart() {
+		return start;
+	}
+
+	public void setStart(Location start) {
+		this.start = start;
+	}
+
+	public Location getEnd() {
+		return end;
+	}
+
+	public void setEnd(Location end) {
+		this.end = end;
 	}
 
 	public int getLength() {
@@ -93,20 +115,17 @@ public class Street {
 	public void setCurrentNumberOfCars(int currentNumberOfCars) {
 		this.currentNumberOfCars = currentNumberOfCars;
 	}
-	
-	/**
-	 * Add connection from this street to another street
-	 * @param street	The other street
-	 * @param cost		Cost (i.e. time)
-	 */
-	public void addEdge(String street, Double cost) {
-		if (!edges.containsKey(street)) {
-			edges.put(street, cost);
-		}
+
+	public int getMaximumAllowedCars() {
+		return maximumAllowedCars;
 	}
-	
-	public Iterator<Map.Entry<String, Double>> getEdges() {
-		return edges.entrySet().iterator();
+
+	public void setMaximumAllowedCars(int maximumAllowedCars) {
+		this.maximumAllowedCars = maximumAllowedCars;
+	}
+
+	public void setEdges(Map<String, Double> edges) {
+		this.edges = edges;
 	}
 	
 }

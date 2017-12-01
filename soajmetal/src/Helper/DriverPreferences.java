@@ -1,5 +1,7 @@
 package Helper;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * 
  * Driver Preferences
@@ -11,34 +13,17 @@ package Helper;
  */
 public class DriverPreferences extends Gene {
 
-	String name;
-	
 	String id;
+	
+	String name;
 	
 	String carId;
 	
+	@SerializedName("current_location")
 	Location currentLocation;
 	
-	double parkingDuration;
-	
-	double targetCost;
-	
-	Location targetLocation;
-	
-	/*
-	 * We can tell which street from GPS
-	 */
-	Street currentStreet;
-	
-	Street targetStreet;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+	@SerializedName("current_street")
+	String currentStreet;
 
 	public String getId() {
 		return id;
@@ -46,6 +31,14 @@ public class DriverPreferences extends Gene {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getCarId() {
@@ -64,44 +57,17 @@ public class DriverPreferences extends Gene {
 		this.currentLocation = currentLocation;
 	}
 
-	public double getParkingDuration() {
-		return parkingDuration;
-	}
-
-	public void setParkingDuration(double parkingDuration) {
-		this.parkingDuration = parkingDuration;
-	}
-
-	public double getTargetCost() {
-		return targetCost;
-	}
-
-	public void setTargetCost(double targetCost) {
-		this.targetCost = targetCost;
-	}
-
-	public Location getTargetLocation() {
-		return targetLocation;
-	}
-
-	public void setTargetLocation(Location targetLocation) {
-		this.targetLocation = targetLocation;
-	}
-
 	public Street getCurrentStreet() {
-		return currentStreet;
+		return City.getInstance().getStreet(currentStreet);
 	}
 
-	public void setCurrentStreet(Street currentStreet) {
+	public void setCurrentStreet(String currentStreet) {
 		this.currentStreet = currentStreet;
 	}
 
-	public Street getTargetStreet() {
-		return targetStreet;
-	}
-
-	public void setTargetStreet(Street targetStreet) {
-		this.targetStreet = targetStreet;
+	@Override
+	public String getIdentifier() {
+		return id;
 	}
 	
 }

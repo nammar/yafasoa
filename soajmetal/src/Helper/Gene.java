@@ -11,4 +11,6 @@ package Helper;
  */
 abstract public class Gene {
 
+	abstract public String getIdentifier();
+	
 }

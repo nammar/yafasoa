@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Slot-1",
+    "street_id": "Street-5",
+    "availability": true,
+    "location": {
+      "latitude": 3.2115889235626,
+      "longitude": 101.6565087316
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 4,
+    "device_id": "Device-5a200b3d90e69"
+  },
+  {
+    "id": "Slot-2",
+    "street_id": "Street-3",
+    "availability": false,
+    "location": {
+      "latitude": 3.0707675530542,
+      "longitude": 101.65684400706
+    },
+    "parking_structure_id": "ParkingStructure-10",
+    "level": 3,
+    "device_id": "Device-5a200b3d90f7a"
+  },
+  {
+    "id": "Slot-3",
+    "street_id": "Street-3",
+    "availability": true,
+    "location": {
+      "latitude": 3.1452566309268,
+      "longitude": 101.74118154859
+    },
+    "parking_structure_id": "ParkingStructure-1",
+    "level": 4,
+    "device_id": "Device-5a200b3d90feb"
+  },
+  {
+    "id": "Slot-4",
+    "street_id": "Street-9",
+    "availability": true,
+    "location": {
+      "latitude": 3.1332843761383,
+      "longitude": 101.66381150817
+    },
+    "parking_structure_id": "ParkingStructure-2",
+    "level": 4,
+    "device_id": "Device-5a200b3d910c6"
+  },
+  {
+    "id": "Slot-5",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.1849912297039,
+      "longitude": 101.69023240321
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 5,
+    "device_id": "Device-5a200b3d91134"
+  },
+  {
+    "id": "Slot-6",
+    "street_id": "Street-6",
+    "availability": false,
+    "location": {
+      "latitude": 3.0414127081671,
+      "longitude": 101.72495912238
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 5,
+    "device_id": "Device-5a200b3d911f9"
+  },
+  {
+    "id": "Slot-7",
+    "street_id": "Street-3",
+    "availability": false,
+    "location": {
+      "latitude": 3.1324429890246,
+      "longitude": 101.68623364378
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 5,
+    "device_id": "Device-5a200b3d912a7"
+  },
+  {
+    "id": "Slot-8",
+    "street_id": "Street-3",
+    "availability": false,
+    "location": {
+      "latitude": 3.0854609068188,
+      "longitude": 101.65933817371
+    },
+    "parking_structure_id": "ParkingStructure-1",
+    "level": 4,
+    "device_id": "Device-5a200b3d9133f"
+  },
+  {
+    "id": "Slot-9",
+    "street_id": "Street-1",
+    "availability": false,
+    "location": {
+      "latitude": 3.1359293683995,
+      "longitude": 101.70384914474
+    },
+    "parking_structure_id": "ParkingStructure-4",
+    "level": 2,
+    "device_id": "Device-5a200b3d913d9"
+  },
+  {
+    "id": "Slot-10",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.1105477182191,
+      "longitude": 101.76800680352
+    },
+    "parking_structure_id": "ParkingStructure-9",
+    "level": 3,
+    "device_id": "Device-5a200b3d9149d"
+  },
+  {
+    "id": "Slot-11",
+    "street_id": "Street-4",
+    "availability": true,
+    "location": {
+      "latitude": 3.2685449578651,
+      "longitude": 101.70395382114
+    },
+    "parking_structure_id": "ParkingStructure-1",
+    "level": 1,
+    "device_id": "Device-5a200b3d9153c"
+  },
+  {
+    "id": "Slot-12",
+    "street_id": "Street-10",
+    "availability": false,
+    "location": {
+      "latitude": 3.1413367302891,
+      "longitude": 101.7312695825
+    },
+    "parking_structure_id": "ParkingStructure-10",
+    "level": 1,
+    "device_id": "Device-5a200b3d915a1"
+  },
+  {
+    "id": "Slot-13",
+    "street_id": "Street-3",
+    "availability": false,
+    "location": {
+      "latitude": 3.1789961133407,
+      "longitude": 101.74312828117
+    },
+    "parking_structure_id": "ParkingStructure-10",
+    "level": 4,
+    "device_id": "Device-5a200b3d91634"
+  },
+  {
+    "id": "Slot-14",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.1673465705713,
+      "longitude": 101.67003050947
+    },
+    "parking_structure_id": "ParkingStructure-7",
+    "level": 2,
+    "device_id": "Device-5a200b3d9168d"
+  },
+  {
+    "id": "Slot-15",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.2470924599063,
+      "longitude": 101.59800515646
+    },
+    "parking_structure_id": "ParkingStructure-4",
+    "level": 3,
+    "device_id": "Device-5a200b3d9171e"
+  },
+  {
+    "id": "Slot-16",
+    "street_id": "Street-6",
+    "availability": false,
+    "location": {
+      "latitude": 3.1217757176,
+      "longitude": 101.7178056324
+    },
+    "parking_structure_id": "ParkingStructure-2",
+    "level": 4,
+    "device_id": "Device-5a200b3d917a6"
+  },
+  {
+    "id": "Slot-17",
+    "street_id": "Street-9",
+    "availability": false,
+    "location": {
+      "latitude": 3.1357777304391,
+      "longitude": 101.75951010762
+    },
+    "parking_structure_id": "ParkingStructure-1",
+    "level": 1,
+    "device_id": "Device-5a200b3d91836"
+  },
+  {
+    "id": "Slot-18",
+    "street_id": "Street-10",
+    "availability": true,
+    "location": {
+      "latitude": 3.1902998566573,
+      "longitude": 101.57254693798
+    },
+    "parking_structure_id": "ParkingStructure-5",
+    "level": 2,
+    "device_id": "Device-5a200b3d918f7"
+  },
+  {
+    "id": "Slot-19",
+    "street_id": "Street-9",
+    "availability": false,
+    "location": {
+      "latitude": 3.185424084411,
+      "longitude": 101.72680900489
+    },
+    "parking_structure_id": "ParkingStructure-5",
+    "level": 5,
+    "device_id": "Device-5a200b3d919ad"
+  },
+  {
+    "id": "Slot-20",
+    "street_id": "Street-8",
+    "availability": false,
+    "location": {
+      "latitude": 3.1525483686235,
+      "longitude": 101.64394356382
+    },
+    "parking_structure_id": "ParkingStructure-10",
+    "level": 5,
+    "device_id": "Device-5a200b3d91a15"
+  },
+  {
+    "id": "Slot-21",
+    "street_id": "Street-9",
+    "availability": true,
+    "location": {
+      "latitude": 3.0513144556941,
+      "longitude": 101.77254455602
+    },
+    "parking_structure_id": "ParkingStructure-8",
+    "level": 1,
+    "device_id": "Device-5a200b3d91a9c"
+  },
+  {
+    "id": "Slot-22",
+    "street_id": "Street-5",
+    "availability": false,
+    "location": {
+      "latitude": 3.1424152214188,
+      "longitude": 101.76548870737
+    },
+    "parking_structure_id": "ParkingStructure-5",
+    "level": 4,
+    "device_id": "Device-5a200b3d91aff"
+  },
+  {
+    "id": "Slot-23",
+    "street_id": "Street-7",
+    "availability": true,
+    "location": {
+      "latitude": 3.1600794404946,
+      "longitude": 101.70954573768
+    },
+    "parking_structure_id": "ParkingStructure-1",
+    "level": 1,
+    "device_id": "Device-5a200b3d91bc3"
+  },
+  {
+    "id": "Slot-24",
+    "street_id": "Street-1",
+    "availability": false,
+    "location": {
+      "latitude": 3.2541470151626,
+      "longitude": 101.61300711192
+    },
+    "parking_structure_id": "ParkingStructure-9",
+    "level": 5,
+    "device_id": "Device-5a200b3d91c60"
+  },
+  {
+    "id": "Slot-25",
+    "street_id": "Street-7",
+    "availability": true,
+    "location": {
+      "latitude": 3.0954595821953,
+      "longitude": 101.66418718366
+    },
+    "parking_structure_id": "ParkingStructure-10",
+    "level": 3,
+    "device_id": "Device-5a200b3d91cd5"
+  },
+  {
+    "id": "Slot-26",
+    "street_id": "Street-8",
+    "availability": false,
+    "location": {
+      "latitude": 3.1498252760268,
+      "longitude": 101.70551701821
+    },
+    "parking_structure_id": "ParkingStructure-9",
+    "level": 3,
+    "device_id": "Device-5a200b3d91d81"
+  },
+  {
+    "id": "Slot-27",
+    "street_id": "Street-9",
+    "availability": false,
+    "location": {
+      "latitude": 3.1184391187935,
+      "longitude": 101.69897511773
+    },
+    "parking_structure_id": "ParkingStructure-4",
+    "level": 3,
+    "device_id": "Device-5a200b3d91e27"
+  },
+  {
+    "id": "Slot-28",
+    "street_id": "Street-7",
+    "availability": false,
+    "location": {
+      "latitude": 3.0384018596983,
+      "longitude": 101.67683601936
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 3,
+    "device_id": "Device-5a200b3d91ea2"
+  },
+  {
+    "id": "Slot-29",
+    "street_id": "Street-3",
+    "availability": false,
+    "location": {
+      "latitude": 3.2032387511998,
+      "longitude": 101.78134373086
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 4,
+    "device_id": "Device-5a200b3d91f7a"
+  },
+  {
+    "id": "Slot-30",
+    "street_id": "Street-8",
+    "availability": true,
+    "location": {
+      "latitude": 3.1332452796455,
+      "longitude": 101.6499790585
+    },
+    "parking_structure_id": "ParkingStructure-4",
+    "level": 2,
+    "device_id": "Device-5a200b3d920c4"
+  },
+  {
+    "id": "Slot-31",
+    "street_id": "Street-7",
+    "availability": false,
+    "location": {
+      "latitude": 3.1583415382683,
+      "longitude": 101.71785456887
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 4,
+    "device_id": "Device-5a200b3d9215d"
+  },
+  {
+    "id": "Slot-32",
+    "street_id": "Street-6",
+    "availability": false,
+    "location": {
+      "latitude": 3.1475322109809,
+      "longitude": 101.68892334963
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 2,
+    "device_id": "Device-5a200b3d9222e"
+  },
+  {
+    "id": "Slot-33",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.1405092328941,
+      "longitude": 101.76295431398
+    },
+    "parking_structure_id": "ParkingStructure-9",
+    "level": 5,
+    "device_id": "Device-5a200b3d922b6"
+  },
+  {
+    "id": "Slot-34",
+    "street_id": "Street-9",
+    "availability": false,
+    "location": {
+      "latitude": 3.1476025624678,
+      "longitude": 101.68606709168
+    },
+    "parking_structure_id": "ParkingStructure-5",
+    "level": 4,
+    "device_id": "Device-5a200b3d9235a"
+  },
+  {
+    "id": "Slot-35",
+    "street_id": "Street-9",
+    "availability": true,
+    "location": {
+      "latitude": 3.2414714977925,
+      "longitude": 101.61181876148
+    },
+    "parking_structure_id": "ParkingStructure-3",
+    "level": 3,
+    "device_id": "Device-5a200b3d923d9"
+  },
+  {
+    "id": "Slot-36",
+    "street_id": "Street-2",
+    "availability": true,
+    "location": {
+      "latitude": 3.1163703563991,
+      "longitude": 101.70711970889
+    },
+    "parking_structure_id": "ParkingStructure-10",
+    "level": 2,
+    "device_id": "Device-5a200b3d92487"
+  },
+  {
+    "id": "Slot-37",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.1624593438432,
+      "longitude": 101.71684571005
+    },
+    "parking_structure_id": "ParkingStructure-1",
+    "level": 5,
+    "device_id": "Device-5a200b3d924fb"
+  },
+  {
+    "id": "Slot-38",
+    "street_id": "Street-5",
+    "availability": false,
+    "location": {
+      "latitude": 3.2323911521409,
+      "longitude": 101.79392955758
+    },
+    "parking_structure_id": "ParkingStructure-3",
+    "level": 1,
+    "device_id": "Device-5a200b3d925af"
+  },
+  {
+    "id": "Slot-39",
+    "street_id": "Street-8",
+    "availability": true,
+    "location": {
+      "latitude": 3.1542008199089,
+      "longitude": 101.82171642161
+    },
+    "parking_structure_id": "ParkingStructure-8",
+    "level": 2,
+    "device_id": "Device-5a200b3d9261c"
+  },
+  {
+    "id": "Slot-40",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.1518845474887,
+      "longitude": 101.70658962095
+    },
+    "parking_structure_id": "ParkingStructure-5",
+    "level": 2,
+    "device_id": "Device-5a200b3d9267c"
+  },
+  {
+    "id": "Slot-41",
+    "street_id": "Street-8",
+    "availability": false,
+    "location": {
+      "latitude": 3.183075712604,
+      "longitude": 101.76323168809
+    },
+    "parking_structure_id": "ParkingStructure-3",
+    "level": 4,
+    "device_id": "Device-5a200b3d926fb"
+  },
+  {
+    "id": "Slot-42",
+    "street_id": "Street-9",
+    "availability": false,
+    "location": {
+      "latitude": 3.121603261591,
+      "longitude": 101.74567604738
+    },
+    "parking_structure_id": "ParkingStructure-4",
+    "level": 4,
+    "device_id": "Device-5a200b3d927a2"
+  },
+  {
+    "id": "Slot-43",
+    "street_id": "Street-5",
+    "availability": false,
+    "location": {
+      "latitude": 3.1472672081288,
+      "longitude": 101.72147479438
+    },
+    "parking_structure_id": "ParkingStructure-3",
+    "level": 3,
+    "device_id": "Device-5a200b3d92834"
+  },
+  {
+    "id": "Slot-44",
+    "street_id": "Street-5",
+    "availability": false,
+    "location": {
+      "latitude": 3.2575108185686,
+      "longitude": 101.69746432499
+    },
+    "parking_structure_id": "ParkingStructure-9",
+    "level": 3,
+    "device_id": "Device-5a200b3d928f2"
+  },
+  {
+    "id": "Slot-45",
+    "street_id": "Street-7",
+    "availability": true,
+    "location": {
+      "latitude": 3.0802394853736,
+      "longitude": 101.69505181673
+    },
+    "parking_structure_id": "ParkingStructure-5",
+    "level": 1,
+    "device_id": "Device-5a200b3d92976"
+  },
+  {
+    "id": "Slot-46",
+    "street_id": "Street-3",
+    "availability": true,
+    "location": {
+      "latitude": 3.1172602129301,
+      "longitude": 101.82661323774
+    },
+    "parking_structure_id": "ParkingStructure-2",
+    "level": 5,
+    "device_id": "Device-5a200b3d92a2a"
+  },
+  {
+    "id": "Slot-47",
+    "street_id": "Street-6",
+    "availability": true,
+    "location": {
+      "latitude": 3.1198330368245,
+      "longitude": 101.71513451123
+    },
+    "parking_structure_id": "ParkingStructure-2",
+    "level": 4,
+    "device_id": "Device-5a200b3d92ac9"
+  },
+  {
+    "id": "Slot-48",
+    "street_id": "Street-2",
+    "availability": false,
+    "location": {
+      "latitude": 3.1759610718278,
+      "longitude": 101.74783600147
+    },
+    "parking_structure_id": "ParkingStructure-1",
+    "level": 5,
+    "device_id": "Device-5a200b3d92b60"
+  },
+  {
+    "id": "Slot-49",
+    "street_id": "Street-9",
+    "availability": false,
+    "location": {
+      "latitude": 3.1641788096785,
+      "longitude": 101.74627105661
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 4,
+    "device_id": "Device-5a200b3d92c17"
+  },
+  {
+    "id": "Slot-50",
+    "street_id": "Street-10",
+    "availability": true,
+    "location": {
+      "latitude": 3.1366794920627,
+      "longitude": 101.71248291854
+    },
+    "parking_structure_id": "ParkingStructure-6",
+    "level": 2,
+    "device_id": "Device-5a200b3d92cc0"
+  }
+]

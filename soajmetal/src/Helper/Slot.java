@@ -1,5 +1,7 @@
 package Helper;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * 
  * Slot that a driver can park
@@ -11,31 +13,44 @@ package Helper;
  */
 public class Slot extends Gene {
 
-	Street streetId;
+	String id;
 	
-	Double availability;
+	@SerializedName("street_id")
+	String streetId;
+	
+	Boolean availability;
 	
 	Location location;
 	
+	@SerializedName("parking_structure_id")
 	String parkingStructureId;
 	
 	String level;
 	
+	@SerializedName("device_id")
 	String deviceId;
+	
+	public String getId() {
+		return id;
+	}
 
-	public Street getStreetId() {
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getStreetId() {
 		return streetId;
 	}
 
-	public void setStreetId(Street streetId) {
+	public void setStreetId(String streetId) {
 		this.streetId = streetId;
 	}
 
-	public Double getAvailability() {
+	public Boolean isAvailable() {
 		return availability;
 	}
 
-	public void setAvailability(Double availability) {
+	public void setAvailability(Boolean availability) {
 		this.availability = availability;
 	}
 
@@ -69,6 +84,11 @@ public class Slot extends Gene {
 
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
+	}
+
+	@Override
+	public String getIdentifier() {
+		return id;
 	}
 	
 }

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "Street-1",
+    "lanes": 2,
+    "start": {
+      "latitude": 3.2258985439362,
+      "longitude": 101.61900502447
+    },
+    "end": {
+      "latitude": 3.1295046517854,
+      "longitude": 101.68499700347
+    },
+    "length": 5,
+    "flow_rate": 4,
+    "current_number_of_cars": 11,
+    "maximum_allowed_cars": 36
+  },
+  {
+    "id": "Street-2",
+    "lanes": 1,
+    "start": {
+      "latitude": 3.0470884341987,
+      "longitude": 101.76946044719
+    },
+    "end": {
+      "latitude": 3.1261021447421,
+      "longitude": 101.63818886086
+    },
+    "length": 4,
+    "flow_rate": 5,
+    "current_number_of_cars": 10,
+    "maximum_allowed_cars": 31
+  },
+  {
+    "id": "Street-3",
+    "lanes": 2,
+    "start": {
+      "latitude": 3.0781737571768,
+      "longitude": 101.78460592916
+    },
+    "end": {
+      "latitude": 3.1401896417129,
+      "longitude": 101.70905822275
+    },
+    "length": 3,
+    "flow_rate": 4,
+    "current_number_of_cars": 12,
+    "maximum_allowed_cars": 35
+  },
+  {
+    "id": "Street-4",
+    "lanes": 3,
+    "start": {
+      "latitude": 3.1447635228481,
+      "longitude": 101.7481844999
+    },
+    "end": {
+      "latitude": 3.2462208806293,
+      "longitude": 101.74977517979
+    },
+    "length": 6,
+    "flow_rate": 6,
+    "current_number_of_cars": 8,
+    "maximum_allowed_cars": 43
+  },
+  {
+    "id": "Street-5",
+    "lanes": 3,
+    "start": {
+      "latitude": 3.0210789638121,
+      "longitude": 101.74565920313
+    },
+    "end": {
+      "latitude": 3.1473498488439,
+      "longitude": 101.69924123311
+    },
+    "length": 5,
+    "flow_rate": 5,
+    "current_number_of_cars": 8,
+    "maximum_allowed_cars": 29
+  },
+  {
+    "id": "Street-6",
+    "lanes": 2,
+    "start": {
+      "latitude": 3.1550738522226,
+      "longitude": 101.77411694747
+    },
+    "end": {
+      "latitude": 3.1452951932907,
+      "longitude": 101.73487825922
+    },
+    "length": 3,
+    "flow_rate": 2,
+    "current_number_of_cars": 12,
+    "maximum_allowed_cars": 33
+  },
+  {
+    "id": "Street-7",
+    "lanes": 3,
+    "start": {
+      "latitude": 3.1883785916532,
+      "longitude": 101.83298537026
+    },
+    "end": {
+      "latitude": 3.053589207888,
+      "longitude": 101.68970782654
+    },
+    "length": 3,
+    "flow_rate": 6,
+    "current_number_of_cars": 10,
+    "maximum_allowed_cars": 43
+  },
+  {
+    "id": "Street-8",
+    "lanes": 2,
+    "start": {
+      "latitude": 3.156151337582,
+      "longitude": 101.68824295298
+    },
+    "end": {
+      "latitude": 3.1435874030875,
+      "longitude": 101.70939091245
+    },
+    "length": 5,
+    "flow_rate": 3,
+    "current_number_of_cars": 6,
+    "maximum_allowed_cars": 26
+  },
+  {
+    "id": "Street-9",
+    "lanes": 2,
+    "start": {
+      "latitude": 3.1935746764266,
+      "longitude": 101.67320880783
+    },
+    "end": {
+      "latitude": 3.112785081806,
+      "longitude": 101.70586817142
+    },
+    "length": 5,
+    "flow_rate": 2,
+    "current_number_of_cars": 15,
+    "maximum_allowed_cars": 33
+  },
+  {
+    "id": "Street-10",
+    "lanes": 2,
+    "start": {
+      "latitude": 3.2168596404633,
+      "longitude": 101.69822119086
+    },
+    "end": {
+      "latitude": 3.1589740076499,
+      "longitude": 101.68935958693
+    },
+    "length": 6,
+    "flow_rate": 3,
+    "current_number_of_cars": 8,
+    "maximum_allowed_cars": 30
+  }
+]
